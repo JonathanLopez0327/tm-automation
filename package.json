@@ -2,13 +2,17 @@
   "name": "tm-automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "generate-report": "allure generate allure-results --clean -o allure-report",
+    "open-report": "allure open allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
+    "@types/axios": "^0.14.4",
     "@types/node": "^22.15.30",
     "allure-playwright": "^3.2.2"
   },
